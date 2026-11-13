@@ -1520,7 +1520,7 @@ $('#cfStage').addEventListener('pointerup',event=>{
 });
 $('#cfStage').addEventListener('pointercancel',()=>{coverflowPointerX=null});
 const bg=$('#bg'),ctx=bg.getContext('2d',{alpha:false});
-const frameCount=235,frameDir='ezgif-7b128168474d91fc-jpg',frames=new Map(),loadedFrames=new Set(),maxCachedFrames=10;
+const frameCount=235,frameDir='frames-enhanced',frames=new Map(),loadedFrames=new Set(),maxCachedFrames=10;
 let targetProgress=0,currentProgress=0,lastTime=0,raf=0,lastDrawnFrame=-1;
 if(!ctx)throw new Error('Canvas is unavailable for the background animation.');
 function currentFrameIndex(){
